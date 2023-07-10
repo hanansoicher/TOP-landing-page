@@ -1,33 +1,34 @@
+/* Global Styles */
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Header */
 .header {
-    height: 5%;
+    height: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
-    padding: 0px 200px;
+    padding: 0 20px;
 }
 
 .logo {
     font-size: 24px;
     color: #F9FAF8;
     padding: 8px;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .links {
     display: flex;
     list-style: none;
-    
 }
 
 .links a {
@@ -35,70 +36,62 @@ body {
     color: #E5E7EB;
     text-decoration: none;
     padding: 8px;
-
 }
 
+/* Content */
 .content {
-    height: auto;
     display: flex;
     flex-direction: column;
-    height: 80%;
-
+    min-height: 90vh;
 }
 
-.section {
-    display: flex;
-    padding: 40px 200px;
-}
-
-/* Section one */
-.one {
+/* Section One */
+.section.one {
     background-color: #1F2937;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
+    padding: 40px;
 }
 
- .one-left {
+.one-left {
     display: flex;
     flex-direction: column;
- }
+    width: 600px;
+}
 
- .one-left h1 {
+.one-h1 {
     font-size: 36px;
     margin: 0;
- }
+}
 
- .one-left p {
-    font-size: 12px;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 8px;
- }
+.one-p {
+    font-size: 14px;
+    margin: 0 0 8px 0;
 
- .one-left button {
+}
+
+.one-button {
     background-color: #3882F6;
     color: white;
-    font-weight: 700;
-    margin-left: 0;
+    font-weight: bold;
     width: 96px;
     height: 36px;
     border-radius: 12px;
     border: none;
- }
+    cursor: pointer;
+}
 
- .one img {
+.one img {
     padding: 40px;
- }
+}
 
- 
 /* Section Two */
-.two {
+.section.two {
     display: flex;
     flex-direction: column;
-    padding-top: 0px;
+    padding: 20px;
 }
 
 .two h1 {
@@ -108,7 +101,8 @@ body {
 
 .two-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .two-container {
@@ -128,39 +122,35 @@ body {
     border: 4px solid #3882F6;
     border-radius: 25px;
     margin: 16px;
-
 }
 
 /* Section Three */
-
-.three {
+.section.three {
     background-color: #E5E7EB;
-    height: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 24px 400px;
+    padding: 120px 400px;
+    flex: 1;
 }
 
-.three .quote {
-    font-size: 20pt;
-    font-style: light italic;
+.quote {
+    font-size: 20px;
+    font-style: italic;
     color: #1F2937;
-
-
+    text-align: center;
+    margin-bottom: 8px;
 }
 
-.three .signature {
-    font-weight: 700;
-    font-size: 16pt;
-    text-align: right;
-    padding-right: 0;
-    margin-right: 0;
+.signature {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: auto;
 }
 
-.four {
-    padding: 65px 150px;
+/* Section Four */
+.section.four {
+    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,24 +160,34 @@ body {
 .four-incepted {
     background-color: #3882F6;
     border-radius: 12px;
-    width: 80%;
     padding: 24px 36px;
+    display: flex;
 }
 
-.four-incepted .text-container {
+.text-container {
     display: flex;
     flex-direction: column;
 }
 
-.four-incepted h4 {
-    margin: 0;
-    display: flex;
-}
-
-.four-incepted p {
+.text-container h4 {
     margin: 0;
 }
 
+.text-container p {
+    margin: 0;
+}
+
+.four button {
+    padding: 8px 12px;
+    color: white;
+    background: none;
+    border-radius: 12px;
+    border: 2px solid white;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+/* Footer */
 .footer {
     height: 5vh;
     background-color: #1F2937;
@@ -197,3 +197,8 @@ body {
     color: white;
 }
 
+.footer h6 {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+}
