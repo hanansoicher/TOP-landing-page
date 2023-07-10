@@ -58,6 +58,7 @@ body {
 .one-left {
     display: flex;
     flex-direction: column;
+    width: 600px;
 }
 
 .one-h1 {
@@ -68,6 +69,7 @@ body {
 .one-p {
     font-size: 14px;
     margin: 0 0 8px 0;
+
 }
 
 .one-button {
@@ -99,8 +101,8 @@ body {
 
 .two-content {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .two-container {
@@ -128,7 +130,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px 40px;
+    padding: 120px 400px;
+    flex: 1;
 }
 
 .quote {
@@ -136,14 +139,13 @@ body {
     font-style: italic;
     color: #1F2937;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .signature {
     font-weight: bold;
     font-size: 16px;
-    text-align: right;
-    padding-right: 0;
-    margin-right: 0;
+    margin-left: auto;
 }
 
 /* Section Four */
@@ -159,6 +161,7 @@ body {
     background-color: #3882F6;
     border-radius: 12px;
     padding: 24px 36px;
+    display: flex;
 }
 
 .text-container {
@@ -172,6 +175,16 @@ body {
 
 .text-container p {
     margin: 0;
+}
+
+.four button {
+    padding: 8px 12px;
+    color: white;
+    background: none;
+    border-radius: 12px;
+    border: 2px solid white;
+    margin-left: 16px;
+    cursor: pointer;
 }
 
 /* Footer */
